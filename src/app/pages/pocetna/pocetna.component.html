@@ -1,0 +1,89 @@
+<article id = "pretragaBar">
+    <input type="text"  class="form-control" placeholder="Prega sifra" name="sifra"  [(ngModel)]="sifra">
+    <input type="text" class="form-control" placeholder="Prega cena"  name="cena"  [(ngModel)]="cena">
+</article>
+<table id="tabla">
+    <thead>
+      <tr>
+        <th scope="col">Sifra cveta</th>
+        <th scope="col">Cena cveta</th>
+        <th scope="col">Opis cveta</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let post of posts|searchpipe:sifra:cena">
+        <td>{{ post.sifra}}</td>
+        <td>{{ post.cena}}</td>
+        <td>{{ post.opis}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+<section id="centralni">
+    <article id="leva">
+      <ul id="levaStranaElem">
+          <ul>
+            <img src="https://livedemo00.template-help.com/prestashop_52387/img/p/7/7/77-tm_home_default.jpg" >
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+              Magni incidunt nobis, vero dolorem adipisci molestias<br> 
+              ipsam eveniet natus, facilis itaque , dolore ipsum ab.<br> 
+              Ea maxime quisquam animi vel iure!</p>
+            </ul>
+            <ul>
+            <img src="https://livedemo00.template-help.com/prestashop_52387/img/p/8/2/82-tm_home_default.jpg" >
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+              Magni incidunt nobis, vero dolorem adipisci molestias<br> 
+              ipsam eveniet natus, facilis itaque , dolore ipsum ab.<br> 
+              Ea maxime quisquam animi vel iure!</p>
+          </ul>
+          <ul>
+            <img src="https://livedemo00.template-help.com/prestashop_52387/img/p/1/1-tm_home_default.jpg" >
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+              Magni incidunt nobis, vero dolorem adipisci molestias<br> 
+              ipsam eveniet natus, facilis itaque , dolore ipsum ab.<br> 
+              Ea maxime quisquam animi vel iure!</p>
+          </ul>
+          <ul>
+            <img src="https://livedemo00.template-help.com/prestashop_52387/img/p/6/6-tm_home_default.jpg">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+              Magni incidunt nobis, vero dolorem adipisci molestias<br> 
+              ipsam eveniet natus, facilis itaque , dolore ipsum ab.<br> 
+              Ea maxime quisquam animi vel iure!</p>
+          </ul>
+      </ul>        
+    </article>
+    <article id="desna">
+        <ul id="desnaStranaElem">
+            <ul>
+              <img src="https://livedemo00.template-help.com/prestashop_52387/img/p/9/2/92-tm_home_default.jpg" >
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                Magni incidunt nobis, vero dolorem adipisci molestias<br> 
+                ipsam eveniet natus, facilis itaque , dolore ipsum ab.<br> 
+                Ea maxime quisquam animi vel iure!</p>
+            </ul>
+            <ul>
+              <img src="https://livedemo00.template-help.com/prestashop_52387/img/p/5/9/59-tm_home_default.jpg" >
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                Magni incidunt nobis, vero dolorem adipisci molestias<br> 
+                ipsam eveniet natus, facilis itaque , dolore ipsum ab.<br> 
+                Ea maxime quisquam animi vel iure!</p>
+            </ul>
+            <ul>
+              <img src="https://livedemo00.template-help.com/prestashop_52387/img/p/1/4/14-tm_home_default.jpg" >
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                Magni incidunt nobis, vero dolorem adipisci molestias<br> 
+                ipsam eveniet natus, facilis itaque , dolore ipsum ab.<br> 
+                Ea maxime quisquam animi vel iure!</p>
+            </ul>
+            <ul>
+              <img src="https://livedemo00.template-help.com/prestashop_52387/img/p/6/6-tm_home_default.jpg" >
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                Magni incidunt nobis, vero dolorem adipisci molestias<br> 
+                ipsam eveniet natus, facilis itaque , dolore ipsum ab.<br> 
+                Ea maxime quisquam animi vel iure!</p>
+              
+            </ul>
+          </ul>
+    </article>
+				
+</section>		
